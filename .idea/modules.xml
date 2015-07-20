@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SectionedRecyclerView.iml" filepath="$PROJECT_DIR$/SectionedRecyclerView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/sample.iml" filepath="$PROJECT_DIR$/app/sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
 </project>
