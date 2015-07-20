@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SectionedRecyclerView.iml" filepath="$PROJECT_DIR$/SectionedRecyclerView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/sample.iml" filepath="$PROJECT_DIR$/app/sample.iml" />
+    </modules>
+  </component>
+</project>
