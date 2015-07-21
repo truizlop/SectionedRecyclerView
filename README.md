@@ -1,4 +1,4 @@
-# SectionedRecyclerView [ ![Download](https://api.bintray.com/packages/truizlop/maven/sectionedrecyclerview/images/download.svg) ](https://bintray.com/truizlop/maven/sectionedrecyclerview/_latestVersion)
+# SectionedRecyclerView [ ![Download](https://api.bintray.com/packages/truizlop/maven/sectionedrecyclerview/images/download.svg) ](https://bintray.com/truizlop/maven/sectionedrecyclerview/_latestVersion) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SectionedRecyclerView-green.svg?style=flat)](https://android-arsenal.com/details/1/2165)
 An adapter to create Android RecyclerViews with sections, providing headers and footers.
 
 ## Usage
