@@ -44,9 +44,14 @@ public abstract class SectionedRecyclerViewAdapter<H extends RecyclerView.ViewHo
     public SectionedRecyclerViewAdapter() {
         super();
         registerAdapterDataObserver(new SectionDataObserver());
-        notifyDataSetChanged();
     }
 
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
+        setupIndices();
+    }
+    
     /**
      * Returns the sum of number of items for each section plus headers and footers if they
      * are provided.
@@ -244,7 +249,6 @@ public abstract class SectionedRecyclerViewAdapter<H extends RecyclerView.ViewHo
     class SectionDataObserver extends RecyclerView.AdapterDataObserver{
         @Override
         public void onChanged() {
-            super.onChanged();
             setupIndices();
         }
     }
