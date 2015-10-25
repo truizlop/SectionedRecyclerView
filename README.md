@@ -137,7 +137,7 @@ Your result will look like this:
 
 ```groovy
 dependencies{
-	compile 'com.truizlop.sectionedrecyclerview:library:1.0.0'
+	compile 'com.truizlop.sectionedrecyclerview:library:1.1.0'
 }
 ```
 
