@@ -251,5 +251,25 @@ public abstract class SectionedRecyclerViewAdapter<H extends RecyclerView.ViewHo
         public void onChanged() {
             setupIndices();
         }
+
+        @Override
+        public void onItemRangeChanged(int positionStart, int itemCount) {
+            setupIndices();
+        }
+
+        @Override
+        public void onItemRangeInserted(int positionStart, int itemCount) {
+            setupIndices();
+        }
+
+        @Override
+        public void onItemRangeRemoved(int positionStart, int itemCount) {
+            setupIndices();
+        }
+
+        @Override
+        public void onItemRangeMoved(int fromPosition, int toPosition, int itemCount) {
+            setupIndices();
+        }
     }
 }
