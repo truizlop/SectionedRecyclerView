@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/truizlop/SectionedRecyclerView'
     gitUrl = 'https://github.com/truizlop/SectionedRecyclerView.git'
 
-    libraryVersion = '1.1.0'
+    libraryVersion = '1.2.0'
 
     developerId = 'truizlop'
     developerName = 'Tomás Ruiz-López'
@@ -31,8 +31,8 @@ android {
     defaultConfig {
         minSdkVersion 9
         targetSdkVersion 22
-        versionCode 2
-        versionName "1.1"
+        versionCode 3
+        versionName "1.2"
     }
     buildTypes {
         release {
