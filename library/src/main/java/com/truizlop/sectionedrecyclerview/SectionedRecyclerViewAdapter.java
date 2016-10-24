@@ -197,8 +197,8 @@ public abstract class SectionedRecyclerViewAdapter<H extends RecyclerView.ViewHo
         return sectionForPosition[position];
     }
 
-    public int getPositionWithinSection(int positon) {
-        return positionWithinSection[positon];
+    public int getPositionWithinSection(int position) {
+        return positionWithinSection[position];
     }
 
     protected boolean isSectionHeaderViewType(int viewType){
