@@ -204,12 +204,12 @@ public abstract class SectionedRecyclerViewAdapter<H extends RecyclerView.ViewHo
     /**
      * Returns the number of sections in the RecyclerView
      */
-    protected abstract int getSectionCount();
+    public abstract int getSectionCount();
 
     /**
      * Returns the number of items for a given section
      */
-    protected abstract int getItemCountForSection(int section);
+    public abstract int getItemCountForSection(int section);
 
     /**
      * Returns true if a given section should have a footer
