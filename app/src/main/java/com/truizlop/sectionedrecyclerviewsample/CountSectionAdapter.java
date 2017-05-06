@@ -46,6 +46,11 @@ public class CountSectionAdapter extends SectionedRecyclerViewAdapter<CountHeade
     }
 
     @Override
+    protected boolean hasHeaderInSection(int section) {
+        return true;
+    }
+
+    @Override
     protected boolean hasFooterInSection(int section) {
         return true;
     }
