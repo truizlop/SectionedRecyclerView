@@ -72,7 +72,7 @@ public abstract class SectionedRecyclerViewAdapter<H extends RecyclerView.ViewHo
         int sections = getSectionCount();
 
         for(int i = 0; i < sections; i++){
-            count += 1 + getItemCountForSection(i) + (hasFooterInSection(i) ? 1 : 0);
+            count += (hasHeaderInSection(i) ? 1 : 0) + getItemCountForSection(i) + (hasFooterInSection(i) ? 1 : 0);
         }
         return count;
     }
@@ -82,8 +82,10 @@ public abstract class SectionedRecyclerViewAdapter<H extends RecyclerView.ViewHo
         int index = 0;
 
         for(int i = 0; i < sections; i++){
-            setPrecomputedItem(index, true, false, i, 0);
-            index++;
+            if(hasHeaderInSection(i)){
+                setPrecomputedItem(index, true, false, i, 0);
+                index++;
+            }
 
             for(int j = 0; j < getItemCountForSection(i); j++){
                 setPrecomputedItem(index, false, false, i, j);
@@ -210,6 +212,11 @@ public abstract class SectionedRecyclerViewAdapter<H extends RecyclerView.ViewHo
      * Returns the number of items for a given section
      */
     protected abstract int getItemCountForSection(int section);
+
+    /**
+     * Returns true if a given section should have a header
+     */
+    protected abstract boolean hasHeaderInSection(int section);
 
     /**
      * Returns true if a given section should have a footer
