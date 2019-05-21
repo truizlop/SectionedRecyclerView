@@ -51,7 +51,7 @@ public abstract class SectionedRecyclerViewAdapter<H extends RecyclerView.ViewHo
         super.onAttachedToRecyclerView(recyclerView);
         setupIndices();
     }
-    
+
     /**
      * Returns the sum of number of items for each section plus headers and footers if they
      * are provided.
@@ -191,6 +191,14 @@ public abstract class SectionedRecyclerViewAdapter<H extends RecyclerView.ViewHo
             setupIndices();
         }
         return isFooter[position];
+    }
+
+    public int getSectionForPosition(int position) {
+        return sectionForPosition[position];
+    }
+
+    public int getPositionWithinSection(int position) {
+        return positionWithinSection[position];
     }
 
     protected boolean isSectionHeaderViewType(int viewType){
